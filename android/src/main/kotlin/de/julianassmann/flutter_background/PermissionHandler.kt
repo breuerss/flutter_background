@@ -81,7 +81,7 @@ class PermissionActivityResultListener(
 
             alreadyCalled = true
 
-            onSuccess(resultCode == Activity.RESULT_OK)
+            onSuccess(true)
         } catch (ex: Exception) {
             onError("flutter_background.PermissionHandler", "Error while waiting for user to disable battery optimizations", ex.localizedMessage)
         }
